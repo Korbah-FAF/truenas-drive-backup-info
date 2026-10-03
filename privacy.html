@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy policy — TrueNAS Drive Backup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow"><a href="index.html">TrueNAS Drive Backup</a></p>
+    <h1>Privacy policy</h1>
+    <p class="intro">This policy describes a personal backup application operated by its owner for their own Google account.</p>
+    <section>
+      <h2>Information accessed and purpose</h2>
+      <p>The application requests Google's <code>drive.file</code> permission to create, list, read, update and remove its own backup files and folders in Google Drive. It processes file identifiers, names, sizes, modification times and repository contents to perform backups, integrity checks, retention maintenance and recovery. Access is limited to files created or explicitly opened with this application.</p>
+      <p>Selected source files are read on the owner's private server. Restic encrypts backup contents and file names before uploading them. Google Drive stores the encrypted repository and can process its storage and activity metadata under Google's own policies.</p>
+      <p>The application does not request Gmail, Google Photos, contacts or calendar permissions. It does not use Google user data for advertising, profiling, sale or AI model training.</p>
+    </section>
+    <section>
+      <h2>Storage and security</h2>
+      <p>Google OAuth credentials and refresh tokens are stored in a protected configuration on the owner's server. The backup encryption password is stored separately from the cloud repository. Recovery requires that password. The owner controls access to the server and its backup interface.</p>
+      <p>Encrypted backup data is stored in the owner's Google Drive. Local logs and backup indexes can contain source paths, timestamps and operational information. They remain under the owner's control.</p>
+    </section>
+    <section>
+      <h2>Sharing and providers</h2>
+      <p>Backup data is transferred to Google Drive to provide the storage requested by the owner. The application does not intentionally publish backups or share them with other users. Sharing permissions on Google Drive are controlled by the account owner.</p>
+      <p>This informational website has no forms, application cookies or added analytics. If hosted on GitHub Pages, GitHub processes visitor connection information, including IP addresses, under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. Google handles account authorisation and cloud storage under its <a href="https://policies.google.com/privacy">Privacy Policy</a>.</p>
+      <p>Use of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+    </section>
+    <section>
+      <h2>Retention, deletion and revoking access</h2>
+      <p>Backup versions are retained according to the owner's configured retention settings. The owner can delete backup versions through the backup software and remove the cloud repository through Google Drive. Removing old versions may require repository maintenance to reclaim stored data; Drive trash may also retain deleted files until it is emptied.</p>
+      <p>The owner can revoke the application's access through Google Account settings. Revocation stops future authorised access; it does not by itself delete existing encrypted backups. The owner can also remove the application's locally stored credentials and backup settings.</p>
+    </section>
+    <section>
+      <h2>Questions and changes</h2>
+      <p>Contact the operator through the support email shown on the application's Google consent screen. This policy will be updated if the application's data practices change.</p>
+    </section>
+    <footer>Updated 3 October 2026 · <a href="index.html">Home</a> · <a href="terms.html">Terms of use</a></footer>
+  </main>
+</body>
+</html>
