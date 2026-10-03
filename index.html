@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TrueNAS Drive Backup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">Personal backup application</p>
+    <h1>TrueNAS Drive Backup</h1>
+    <p class="intro">An owner-operated tool for storing encrypted, versioned backups in the owner's Google Drive.</p>
+    <section>
+      <h2>What the application does</h2>
+      <p>The application runs on the owner's private server. It uses Backrest, restic and rclone to back up selected documents, photographs and application recovery files. Backup contents and file names are encrypted by restic before they are uploaded to Google Drive.</p>
+      <p>The owner uses a private Backrest interface to choose backup dates, browse saved folders and restore files. This website provides information about the application; it does not provide access to the backups or to the private server.</p>
+    </section>
+    <section>
+      <h2>Google Drive access</h2>
+      <p>The application requests the <code>drive.file</code> permission. This allows it to manage files and folders created or explicitly opened with this application, including its backup repository. It does not request access to Gmail, Google Photos or the rest of the owner's existing Drive files.</p>
+      <p>Only the owner's Google account is intended to authorise this application. There is no public registration or public backup service.</p>
+    </section>
+    <section>
+      <h2>Privacy and contact</h2>
+      <p>Read the <a href="privacy.html">privacy policy</a> and <a href="terms.html">terms of use</a>. For questions, use the application's support email shown on its Google consent screen.</p>
+      <p class="muted">This is a personal integration using third-party software. It is not an official product or service of Google, TrueNAS, Backrest, restic or rclone.</p>
+    </section>
+    <footer>Updated 3 October 2026</footer>
+  </main>
+</body>
+</html>
